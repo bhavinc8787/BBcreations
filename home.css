@@ -1,0 +1,388 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #3498db, #e74c3c, #f39c12, #2ecc71); /* Adjust colors as needed */
+    color: #000000; /* Text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e4520e;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px; 
+    margin-right: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .dropdown-content a:hover {
+    background-color: #555;
+}
+
+header .search-box input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+#home {
+    background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.home-content {
+    position: relative;
+    z-index: 1;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.home-content p {
+    font-size: 24px;
+}
+
+
+
+
+.hiring-banner {
+    background-color: #ffcc00;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.hiring-banner h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.hiring-banner p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.hiring-banner a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-category {
+    margin-bottom: 40px;
+}
+
+.portfolio-category h3 {
+    margin-bottom: 10px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.box {
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+   
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.box img, .box video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.box p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.colorful-box {
+    background-color: #ffeb3b; /* Default color */
+}
+
+.colorful-box:hover {
+    transform: scale(1.05);
+    background-color: #fbc02d; /* Hover color */
+}
+
+.contact-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-box h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-box button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-box button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.box img,
+.box video {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    border-radius: 5px;
+}
+
+.scroll-container .box {
+    width: 300px; 
+    flex-shrink: 0;
+}
+
+.contact-box form input,
+.contact-box form textarea {
+    width: calc(100% - 20px); 
+}
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px; 
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px); 
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .dropdown-content a:hover {
+    background-color: #f0f0f5;
+}
+#services {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 3%;
+}
+
+#services h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#services li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 200px;
+}
+
+#services li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+#services li:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #services h2 {
+        font-size: 24px;
+    }
+    #services li a {
+        font-size: 16px;
+    }
+}
+.portfolio-category {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.portfolio-category h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.box iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #333;
+}
