@@ -19,6 +19,7 @@ header {
     width: 100%;
     z-index: 1000;
     transition: top 0.3s;
+    margine-bottom:20px;
 }
 
 
